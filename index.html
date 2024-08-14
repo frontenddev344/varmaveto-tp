@@ -189,6 +189,25 @@ img.white_bg_img {
 .start_line p {
     margin-bottom: 0;
 }
+.beste_cas{
+  background-image: url(./assets/images/cs_bg_2.jpg);
+        background-size: cover;
+        color: #fff;
+        padding: 60px 0;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+}
+.beste_cas::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        background-color: #00000099;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+}
 
   }
 </style>
@@ -353,8 +372,9 @@ img.white_bg_img {
 
   <div class="mobile-view-design d-sm-none">
     <section class="mobile-view">
+      <h1 class="beste_cas">Parhaat <br>vedonlyöntisivustot</h1>
       <div class="container">
-        <h1 class="beste_cas">Parhaat vedonlyöntisivustot</h1>
+      
 
 
 
