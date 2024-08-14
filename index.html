@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+  <link rel="icon" href="assets/images/fav-icn.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/media.css" />
+  <title>Kotisivu</title>
+</head>
+<style>
+  .main-widget {
+    padding: 50px 0;
+    background: #024db6;
+  }
+  div#cookies-popup {
+    background: whitesmoke;
+    padding: 40px;
+    position: fixed;
+    bottom: 0;
+    display: block
+    
+    ;
+}
+div#cookies-popup p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+div#cookies-popup button#accept-cookies {
+    background: #024db6;
+    color: #fff;
+    padding: 10px 20px;
+    outline: unset;
+    border: unset;
+    border-radius: 20px;
+    font-size: 16px;
+}
+  @media(max-width:575px) {
+    .main_box {
+      display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .start_line {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 1px 0;
+      box-shadow: unset;
+      background: unset;
+      color: #fff;
+      margin: 17px 0;
+    }
+
+    .main_box .one_o {
+      color: #fff;
+    }
+
+    .main_box h6.heading_main {
+      color: #fff;
+      font-size: 22px;
+    }
+
+    .awesome span {
+      color: #fff;
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 6px;
+      background: #ff7000;
+      display: block;
+    }
+
+    .warapper {
+      background: #000;
+      padding: 20px;
+      /* border: 4px solid #024db6; */
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+
+    .warapper span {
+      color: #fff;
+    }
+
+    .rate .rating-text {
+      font-size: 14px;
+    }
+
+    .notpad {
+      border-left: 2px solid #ff7000;
+      border-right: 2px solid #ff7000;
+    }
+
+    p.rated-star {
+      color: #fdbb4f;
+      margin: 0 2px;
+    }
+
+    .awesome {
+      background: #ff7000;
+      padding: 11px;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    .rate.notpad p,
+    p.rated-star {
+      padding-bottom: 0;
+      font-size: 14px;
+    }
+
+    .notpad {
+      padding: 0 15px;
+    }
+
+    .text_auality {
+      text-align: center;
+    }
+
+    .beting_logo {
+      width: 100%;
+    }
+
+    .one_o {
+      width: 100%;
+    }
+
+    .beting_logo img {
+      width: 100%;
+      max-width: 200px;
+      padding: 0 15px 0 0;
+      height: 130px;
+      object-fit: contain;
+    }
+
+    img[alt=playfina] {
+      height: 85px;
+    }
+
+    .one_o a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .one_o p {
+      font-size: 16px;
+    }
+
+    .text_auality p {
+      font-size: 21px;
+      font-weight: 300;
+      margin: 20px 0;
+    }
+
+    .venetian-inner {
+      margin-top: 20px;
+    }
+
+    .main-rate-star {
+      display: flex;
+    }
+
+    .beste_cas {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+   .bottom_para {
+    font-size: 15px;
+    text-align: center;
+}
+img.white_bg_img {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+  }
+</style>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="site-logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="main-nav">
+          <ul>
+            <li>
+              <a href="luxury.html">Luksushotellit</a>
+            </li>
+            <li>
+              <a href="5-star.html">5 tähteä</a>
+            </li>
+            <li>
+              <a href="casino.html">Kasino hotellit</a>
+            </li>
+            <li>
+              <a href="alternative.html">Vaihtoehtoinen</a>
+            </li>
+            <li>
+              <a href="bidding.html">Tarjoukset</a>
+            </li>
+          </ul>
+          <div class="close">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+        <div class="toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="desktop_view d-none d-sm-block">
+    <div class="main-widget">
+      <div class="eg-widget" data-widget="search" data-program="fi-hcom" data-lobs="stays" data-network="pz"
+        data-camref="1101l3TiYz"></div>
+    </div>
+    <div class="site-banner">
+      <div class="container">
+        <div class="banner-wrap">
+          <div class="banner-text">
+            <h1>Maailman kaunein on tietysti maailma itse.</h1>
+            <p>
+              Wallace Stevens Kaikki mitä sinun tulee tietää Suomen
+              hotellivertailu sivustosta
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-sec ptb-50" data-aos="fade-up">
+      <div class="container">
+        <div class="top-wrap">
+          <div class="top-text">
+            <p>
+              Varmavetossa vertailemme Suomen hotelleja. Annamme sinulle hieman
+              mielenrauhaa, kun valitset täydellisen hotellin sinulle ja
+              perheellesi nopeasti ja helposti. Tältä sivulta löydät kaiken
+              Suomen hotelleista.
+            </p>
+          </div>
+
+          <div class="top-listing">
+            <ul>
+              <li>Tutustu superylellisten hotellien luetteloomme</li>
+              <li>Tutustu 5 tähden hotellivalikoimaamme.</li>
+              <li>
+                Täytä itsesi adrenaliinilla ja valitse hotelli, jossa on kasino
+              </li>
+              <li>Yövy ainutlaatuisessa ja vaihtoehtoisessa hotellissa,</li>
+              <li>Hanki parhaat tarjouksemme.</li>
+              <li>
+                Hyödynnä omistautunutta ja ystävällistä asiakaspalveluamme
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-card pb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="main-box" style="background-image: url(./assets/images/main-card1.jpg)">
+              <a href="luxury.html">
+                <div class="main-text">
+                  <h3>Luksus</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="main-box" style="background-image: url(./assets/images/main-card2.webp)">
+              <a href="5-star.html">
+                <div class="main-text">
+                  <h3>5 tähden hotellit</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="main-box" style="background-image: url(./assets/images/main-card3.jpg)">
+              <a href="casino.html">
+                <div class="main-text">
+                  <h3>Kasino Hotellit</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="main-box" style="background-image: url(./assets/images/main-card4.webp)">
+              <a href="alternative.html">
+                <div class="main-text">
+                  <h3>Vaihtoehtoisia hotelleja</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12" data-aos="fade-up">
+            <div class="main-box" style="background-image: url(./assets/images/main-card5.jpg)">
+              <a href="bidding.html">
+                <div class="main-text">
+                  <h3>Tarjoukset</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cookies section start here -->
+    <div id="cookies-popup">
+      <p>
+        Käytämme evästeitä parantaaksemme surffauskokemustasi. Nämä ovat pieniä
+        tekstitiedostoja, joita säilytetään järjestelmässäsi. Hyväksyt
+        evästeiden käytön, jos jatkat verkkosivustomme käyttöä. Voit muokata
+        evästevalintojasi selaimesi asetuksissa. Napsauta tätä nähdäksesi
+        tietosuojakäytäntömme saadaksesi lisätietoja.
+      </p>
+      <button id="accept-cookies">Hyväksyä</button>
+    </div>
+    <!-- cookies section end here -->
+  </div>
+
+
+
+
+
+  <div class="mobile-view-design d-sm-none">
+    <section class="mobile-view">
+      <div class="container">
+        <h1 class="beste_cas">Parhaat vedonlyöntisivustot</h1>
+
+
+
+
+        <div class="warapper one">
+          <a href="https://media.affiliatestonybet.com/redirect.aspx?pid=171368&bid=1991&lpid=1010" target="_blank"></a>
+          <div class="main_box">
+            <div class="beting_logo">
+              <span>
+                <a href="https://media.affiliatestonybet.com/redirect.aspx?pid=171368&bid=1991&lpid=1010"
+                  target="_blank"><img src="./assets/images/tonybet_tp.png" alt="tony_tuf"></a>
+              </span>
+            </div>
+            <div class="one_o">
+              <span>
+
+                <h6 class="heading_main">
+                  Tervetuliaisbonus</h6>
+                <p>100% Aina 100€</p>
+              </span>
+            </div>
+          </div>
+          <div class="start_line">
+            <div class="rate ">
+              <p class="rating-text">
+                Luokitus <b>9.9</b></p>
+              <p></p>
+            </div>
+            <div class="rate notpad">
+              <p>Äänet(795)</p>
+
+            </div>
+            <div class="main-rate-star">
+              <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+            </div>
+          </div>
+          <div class="awesome">
+            <a href="https://media.affiliatestonybet.com/redirect.aspx?pid=171368&bid=1991&lpid=1010"
+              target="_blank"><span>Rekisteröidy         </span></a>
+          </div>
+
+        </div>
+
+
+
+        <div class="warapper one">
+       
+            <div class="main_box">
+              <div class="beting_logo tonybet">
+                <span>
+                  <a href="https://cshd.servclick1move.com/?mid=146013_1369352">
+                  <img src="./assets/images/cashed.svg" alt="tony_tuf">
+                </a>
+                </span>
+              </div>
+              <div class="one_o">
+                <span>
+                  <a href="https://cshd.servclick1move.com/?mid=146013_1369352">
+                    <h6 class="heading_main">
+                      Tervetuliaisbonus</h6>
+                  </a>
+                  <p>100% Jopa 200€
+                  </p>
+                </span>
+              </div>
+            </div>
+            <div class="start_line">
+              <div class="rate ">
+                <p class="rating-text">
+                  Luokitus <b>9.8</b></p>
+                <p></p>
+              </div>
+              <div class="rate notpad">
+                <p>Äänet(795)</p>
+
+              </div>
+              <div class="main-rate-star">
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              </div>
+            </div>
+            <div class="awesome">
+              <a href="https://cshd.servclick1move.com/?mid=146013_1369352"><span>Rekisteröidy
+                </span>
+              </a>
+            </div>
+       
+        </div>
+
+
+
+        <div class="warapper one">
+         
+            <div class="main_box">
+              <div class="beting_logo tonybet">
+                
+                <span>
+                  <a href="https://rbn.servclick1move.com/?mid=64681_1369357">
+                    <img src="./assets/images/robona_tp.png" alt="tony_tuf">
+                  </a>
+                </span>
+              </div>
+              <div class="one_o">
+                <span>
+                  <a href="https://rbn.servclick1move.com/?mid=64681_1369357">
+                    <h6 class="heading_main">
+                      Tervetuliaisbonus</h6>
+                  </a>
+                  <p>100% Jopa 200€</p>
+                </span>
+              </div>
+            </div>
+            <div class="start_line">
+              <div class="rate ">
+                <p class="rating-text">
+                  Luokitus <b>9.7</b></p>
+                <p></p>
+              </div>
+              <div class="rate notpad">
+                <p>Äänet(795)</p>
+
+              </div>
+              <div class="main-rate-star">
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              </div>
+            </div>
+            <div class="awesome">
+              <a href="https://rbn.servclick1move.com/?mid=64681_1369357"><span>Rekisteröidy
+                
+                </span></a>
+            </div>
+         
+        </div>
+
+
+
+        <div class="warapper one">
+      
+            <div class="main_box">
+              <div class="beting_logo tonybet">
+                <span>
+                  <a href="https://sgc.servclick1move.com/?mid=110085_1369359">
+                    <img src="./assets/images/sg_casino.svg" alt="tony_tuf" class="white_bg_img">
+                  </a>
+                </span>
+              </div>
+              <div class="one_o">
+                <span>
+                  <a href="https://sgc.servclick1move.com/?mid=110085_1369359">
+                    <h6 class="heading_main">
+                      Tervetuliaisbonus</h6>
+                  </a>
+                  <p>100% Jopa 200€</p>
+                </span>
+              </div>
+            </div>
+            <div class="start_line">
+              <div class="rate ">
+                <p class="rating-text">
+                  Luokitus <b>9.7</b></p>
+                <p></p>
+              </div>
+              <div class="rate notpad">
+                <p>Äänet(795)</p>
+
+              </div>
+              <div class="main-rate-star">
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              </div>
+            </div>
+            <div class="awesome">
+              <a href="https://sgc.servclick1move.com/?mid=110085_1369359"><span>Rekisteröidy
+                  
+                </span></a>
+            </div>
+        
+        </div>
+
+
+        <div class="warapper one">
+        
+            <div class="main_box">
+              <div class="beting_logo tonybet">
+                <span>
+                  <a href="https://mu.fastmui.com/redirect.aspx?pid=337823&lpid=530&bid=1971">
+                  <img src="./assets/images/20-bet-removebg-preview.png" alt="tony_tuf">
+                </a>
+                </span>
+             
+              </div>
+              <div class="one_o">
+                <span>
+                  <a href="https://mu.fastmui.com/redirect.aspx?pid=337823&lpid=530&bid=1971">
+                    <h6 class="heading_main">
+                      Tervetuliaisbonus</h6>
+                  </a>
+                  <p>100% Jopa 200€</p>
+                </span>
+              </div>
+            </div>
+            <div class="start_line">
+              <div class="rate ">
+                <p class="rating-text">
+                  Luokitus <b>9.6</b></p>
+                <p></p>
+              </div>
+              <div class="rate notpad">
+                <p>Äänet(795)</p>
+
+              </div>
+              <div class="main-rate-star">
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              </div>
+            </div>
+            <div class="awesome">
+              <a href="https://mu.fastmui.com/redirect.aspx?pid=337823&lpid=530&bid=1971"><span>Rekisteröidy
+                  
+                </span></a>
+            </div>
+         
+        </div>
+
+
+
+        <div class="warapper one">
+       
+            <div class="main_box">
+              <div class="beting_logo tonybet">
+                <span>
+                  <a href="https://qwin.servclick1move.com/?mid=176161_1369378">
+                  <img src="./assets/images/quikwin_tp.png" alt="tony_tuf">
+                </a>
+                </span>
+              </div>
+              <div class="one_o">
+                <span>
+                  <a href="https://qwin.servclick1move.com/?mid=176161_1369378">
+                    <h6 class="heading_main">
+                      Tervetuliaisbonus</h6>
+                  </a>
+                  <p>100% Jopa 200€</p>
+                </span>
+              </div>
+            </div>
+            <div class="start_line">
+              <div class="rate ">
+                <p class="rating-text">
+                  Luokitus <b>9.5</b></p>
+                <p></p>
+              </div>
+              <div class="rate notpad">
+                <p>Äänet(795)</p>
+
+              </div>
+              <div class="main-rate-star">
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              </div>
+            </div>
+            <div class="awesome">
+              <a href="https://qwin.servclick1move.com/?mid=176161_1369378"><span>Rekisteröidy
+                  
+                </span></a>
+            </div>
+       
+        </div>
+
+
+
+        <div class="warapper one">
+         
+            <div class="main_box">
+              <div class="beting_logo tonybet">
+                <span>
+                  <a href="https://bnkw.servclick1move.com/?mid=110085_1369373">
+                  <img src="./assets/images/bankobet.svg" alt="tony_tuf" class="white_bg_img">
+                </a>
+                </span>
+              </div>
+              <div class="one_o">
+                <span>
+                  <a href="https://bnkw.servclick1move.com/?mid=110085_1369373">
+                    <h6 class="heading_main">
+                      Tervetuliaisbonus</h6>
+                  </a>
+                  <p>10% Bonus 500€ Asti</p>
+                </span>
+              </div>
+            </div>
+            <div class="start_line">
+              <div class="rate ">
+                <p class="rating-text">
+                  Luokitus <b>9.5</b></p>
+                <p></p>
+              </div>
+              <div class="rate notpad">
+                <p>Äänet(795)</p>
+
+              </div>
+              <div class="main-rate-star">
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              </div>
+            </div>
+            <div class="awesome">
+              <a href="https://bnkw.servclick1move.com/?mid=110085_1369373"><span>
+                Rekisteröidy
+                </span></a>
+            </div>
+        
+        </div>
+
+
+        <div class="warapper one">
+      
+            <div class="main_box">
+              <div class="beting_logo tonybet">
+                <span>
+                  <a href="">
+                  <img src="./assets/images/librabet-logo.png" alt="tony_tuf">
+                </a>
+                </span>
+              </div>
+              <div class="one_o">
+                <span>
+                  <a href="https://lrb.servclick1move.com/?mid=64681_1369361">
+                    <h6 class="heading_main">
+                      Tervetuliaisbonus</h6>
+                  </a>
+                  <p>100% Jopa 200€</p>
+                </span>
+              </div>
+            </div>
+            <div class="start_line">
+              <div class="rate ">
+                <p class="rating-text">
+                  Luokitus <b>9.5</b></p>
+                <p></p>
+              </div>
+              <div class="rate notpad">
+                <p>Äänet(795)</p>
+
+              </div>
+              <div class="main-rate-star">
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+                <p class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></p>
+              </div>
+            </div>
+            <div class="awesome">
+              <a href="https://lrb.servclick1move.com/?mid=64681_1369361"><span>
+                Rekisteröidy
+                </span></a>
+            </div>
+       
+        </div>
+
+
+
+        <p class="py-5 bottom_para">Täällä Varmavetossa käytämme lukuisia mittareita arvioidaksemme ja listataksemme Suomen parhaita
+          vedonlyöntisivustoja. Otamme huomioon palveluntarjoajien kokonaisarvon, maineen, turvallisuuden ja lopulta
+          käyttäjäkokemuksen mielenrauhasi ja vedonlyöntikokemuksesi takaamiseksi. Kaikilta täältä Varmavetolta
+          toivotamme sinulle onnea ja toivomme, että nautit vedonlyöntimatkastasi.</p>
+
+      </div>
+    </section>
+  </div>
+
+
+
+  <footer class="site-footer ptb-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-wrap">
+            <div class="footer-logo">
+              <a href="index.html">
+                <img src="assets/images/logo.png" alt="" />
+              </a>
+            </div>
+            <div class="social-links">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-wrap">
+            <div class="footer-heading">
+              <h3>Valikko</h3>
+            </div>
+            <div class="footer-links">
+              <ul>
+                <li>
+                  <a href="index.html"> Kotisivu </a>
+                </li>
+                <li>
+                  <a href="luxury.html"> Luksushotellit </a>
+                </li>
+                <li>
+                  <a href="5-star.html"> 5 tähteä </a>
+                </li>
+                <li>
+                  <a href="casino.html"> Kasino hotellit </a>
+                </li>
+                <li>
+                  <a href="alternative.html"> Vaihtoehtoinen </a>
+                </li>
+                <li>
+                  <a href="bidding.html"> Tarjoukset </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-wrap">
+            <div class="footer-heading">
+              <h3>Tuki</h3>
+            </div>
+            <div class="footer-links">
+              <ul>
+                <li>
+                  <a href="contact-us.html"> Ota meihin yhteyttä </a>
+                </li>
+                <li>
+                  <a href="privacy-policy.html"> Tietosuojakäytäntö </a>
+                </li>
+                <li>
+                  <a href="term-and-condition.html"> Käyttöehdot </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p>© Copyright 2024 , varmaveto.com All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script class="eg-widgets-script"
+    src="https://affiliates.expediagroup.com/products/widgets/assets/eg-widgets.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var acceptCookiesBtn = document.getElementById("accept-cookies");
+      var cookiesPopup = document.getElementById("cookies-popup");
+
+      acceptCookiesBtn.addEventListener("click", function () {
+        cookiesPopup.style.display = "none";
+        // You can add code here to set a cookie to remember the user's choice
+      });
+    });
+  </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

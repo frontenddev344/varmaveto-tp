@@ -1,0 +1,349 @@
+@media(max-width:1200px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media(max-width:992px) {
+    .toggle {
+        display: block;
+        font-size: 25px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav ul li {
+        padding: 5px 0;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        height: 100vh;
+        width: 400px;
+        z-index: 99;
+        padding: 50px;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+
+    }
+
+    .menuToggle .main-nav {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: translateX(0%);
+    }
+
+    .close {
+        display: block;
+        font-size: 18px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .form-wrap {
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    .first-group {
+        width: 100%;
+    }
+
+    .sec-group {
+        width: 50%;
+    }
+
+    .last-group {
+        width: 49%;
+    }
+
+    .search-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-btn button {
+        height: 50px;
+        width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-group label {
+        display: none;
+    }
+
+    .form-group input::placeholder,
+    .form-group input,
+    #check-in[type="date"]:before,
+    #check-out[type="date"]:before {
+        color: #000;
+    }
+
+    .form-group input {
+        height: 45px;
+        background-color: #fff;
+        padding: 0 10px;
+    }
+
+    .luxury-wrap {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .luxury-img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .luxury-txt {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .ptb-50 {
+        padding: 30px 0;
+    }
+
+    .contact-img {
+        height: 450px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:850px) {
+    .main-box {
+        height: 350px;
+        margin-bottom: 15px;
+    }
+
+    .site-logo img {
+        max-width: 200px;
+    }
+
+    .footer-logo img {
+        max-width: 220px;
+    }
+
+    .social-links ul li {
+        padding-inline-end: 15px;
+    }
+
+
+}
+
+@media(max-width:767px) {
+    .banner-text h1 {
+        font-size: 3rem;
+    }
+
+    .banner-text p {
+        font-size: 1.4rem;
+    }
+
+    .footer-logo img {
+        margin-bottom: 15px;
+    }
+
+    .footer-heading h3 {
+        margin-bottom: 10px;
+    }
+
+    .footer-wrap {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .contact-img {
+        height: 400px;
+    }
+
+    .copy-right {
+        margin-top: 15px;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .social-links ul {
+        justify-content: center;
+    }
+}
+
+@media(max-width:575px) {
+    .main-nav {
+        width: 100%;
+    }
+
+    .contact-img {
+        height: 350px;
+    }
+
+    .luxury-txt {
+        padding: 15px 0 0 0;
+    }
+
+    .luxury-txt h3,
+    .view-more a {
+        margin-bottom: 10px;
+    }
+
+    .main-box {
+        height: 300px;
+    }
+
+    .site-logo img {
+        max-width: 180px;
+    }
+
+    .luxury-img {
+        height: 300px;
+    }
+
+    .form-wrap {
+        padding: 15px 0;
+    }
+
+
+
+/* new css */
+.main_box {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+  
+  .start_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1px 0;
+    box-shadow:unset;
+    background: unset;
+color: #fff;
+    margin: 17px 0;
+  }
+  .main_box .one_o {
+    color: #fff;
+}
+.main_box  h6.heading_main {
+    color: #fff;
+    font-size: 15px;
+}
+  .awesome span {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 6px;
+    background: rgb(2 77 182 / 74%);
+    display: block;
+  }
+  
+  .warapper {
+    background: rgb(255 112 0 / 90%);
+    padding: 20px;
+    /* border: 4px solid #024db6; */
+    border-radius: 6px;
+    margin: 20px 0;
+  }
+  .warapper span {
+    color: #fff;
+}
+.rate .rating-text {
+    font-size: 14px;
+}
+  .notpad {
+    border-left: 2px solid #024db6;
+    border-right: 2px solid #024db6;
+  }
+  
+  p.rated-star {
+    color: #fdbb4f;
+  }
+  
+  .awesome {
+    background: #024db6;
+    padding: 11px;
+    text-align: center;
+    border-radius: 6px;
+  }
+  
+  .rate.notpad p,
+  p.rated-star {
+    padding-bottom: 0;
+    font-size: 16px;
+  }
+  
+  .notpad {
+    padding: 0 9px;
+  }
+  
+  .text_auality {
+    text-align: center;
+  }
+  
+  .beting_logo {
+    width: 100%;
+  }
+  
+  .one_o {
+    width: 100%;
+  }
+  
+  .beting_logo img {
+    width: 100%;
+    max-width: 200px;
+    padding: 0 15px 0 0;
+    height: 130px;
+    object-fit: contain;
+  }
+  
+  img[alt=playfina] {
+    height: 85px;
+  }
+  
+  .one_o a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .one_o p {
+    font-size: 16px;
+  }
+  
+  .text_auality p {
+    font-size: 21px;
+    font-weight: 300;
+    margin: 20px 0;
+  }
+  
+  .venetian-inner {
+    margin-top: 20px;
+  }
+  .main-rate-star {
+    display: flex;
+}
+.beste_cas {
+    text-align: center;
+    padding: 20px 0;
+}
+
+}
+
+@media(max-width:374px) {
+    html {
+        font-size: 10px;
+    }
+}

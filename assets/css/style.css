@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* global css start here */
+html {
+    font-size: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Archivo", sans-serif;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Archivo", sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+/* .pt-30{
+    padding-top: 30px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.ptb-30{
+    padding: 30px 0;
+} */
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.ptb-50 {
+    padding: 50px 0;
+}
+
+.pb-70 {
+    padding-bottom: 70px;
+}
+
+.ptb-70 {
+    padding: 70px 0;
+}
+
+/* global css end here */
+
+
+/* header css start  */
+
+.main-nav ul li a {
+    font-size: 1.33rem;
+    color: #333;
+    transition: all 0.3s linear;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: #ff7000;
+}
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.main-nav ul li {
+    padding: 0 20px;
+}
+
+.site-logo img {
+    max-width: 250px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.toggle,
+.close {
+    display: none;
+}
+
+/* header css end  */
+
+/* search bar css start */
+.form-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #d7d7d7;
+}
+
+.form-group input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #d7d7d7;
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-group input::placeholder {
+    color: #fff;
+}
+
+.search-btn button {
+    height: 70px;
+    font-size: 1.16rem;
+    background-color: #ff7000;
+    color: #fff;
+    border: none;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.first-group {
+    width: 30%;
+}
+
+.sec-group {
+    width: 15%;
+    text-align: center;
+}
+
+.last-group {
+    width: 10%;
+    text-align: center;
+}
+
+.search-btn {
+    width: 15%;
+    text-align: right;
+
+}
+
+:focus-visible {
+    outline: none;
+}
+
+.sec-group input,
+.last-group input {
+    padding: 0 10px;
+    text-align: center;
+}
+
+input[type="date"],
+#adults {
+    position: relative;
+    padding: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+}
+
+#check-in[type="date"]:before,
+#check-out[type="date"]:before {
+    color: transparent;
+    background: none;
+    display: block;
+    font-family: 'FontAwesome';
+    top: 10px;
+    content: "\f133";
+    /* This is the calendar icon in FontAwesome */
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+#check-out[type="date"]:before {
+    content: "\f30b";
+}
+
+.seach-bar {
+    background-color: #000;
+}
+
+/* search bar css end */
+
+/* banner section css start */
+.site-banner {
+    background-image: url(../images/hero-banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.site-banner .container {
+    height: 100%;
+}
+
+.banner-wrap {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.banner-text {
+    background-color: #ffffffe6;
+    text-align: right;
+    padding: 50px 20px;
+    max-width: 450px;
+}
+
+.banner-text h1 {
+    font-size: 3.33rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* banner section css end */
+/* top section start here */
+.top-text p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.top-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.top-listing ul {
+    list-style: disc;
+    padding: 0 40px;
+    margin-top: 30px;
+}
+
+.top-listing ul li {
+    font-size: 1.33rem;
+    padding: 5px 0;
+}
+
+/* top section end here */
+
+/* main card section css start */
+.main-box {
+    background-image: url(../images/banner.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.main-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.main-text h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.main-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+.main-box a{
+    position: relative;
+    overflow: hidden;
+}
+/* Circle */
+
+.main-box a::after,
+.luxury-img::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.main-box a:hover::after,
+.luxury-img:hover::after {
+    animation: circle 1.2s;
+    -webkit-animation: circle 1.2s;
+}
+
+@-webkit-keyframes circle {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+/*main card section css end */
+
+
+/* sub pages css start  */
+.luxury-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 5px solid #024db6;
+    margin-bottom: 30px;
+}
+
+.luxury-img {
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+}
+
+.luxury-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.luxury-txt {
+    width: 60%;
+    padding: 30px;
+}
+
+
+.luxury-txt h3 {
+    font-size: 2.33rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #024db6;
+}
+
+.luxury-txt p {
+    font-size: 1.33rem;
+}
+
+.view-more a {
+    font-size: 1.33rem;
+    padding: 15px 40px;
+    background-color: #024db6;
+    color: #fff;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.3s linear;
+}
+
+.view-more a:hover {
+    background-color: #ff7000;
+}
+
+.bottom-text p {
+    font-size: 1.33rem;
+    text-align: center;
+}
+
+.offers-txt p {
+    margin-bottom: 0px;
+}
+
+.offers-txt ul li {
+    font-size: 1.33rem;
+    margin: 3px 0;
+}
+
+.offers-txt ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.offers-txt p em {
+    font-weight: 600;
+}
+
+/* sub pages css end */
+/* contact us page css start  */
+.top-text h2 {
+    font-size: 2.91rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-img {
+    height: 100%;
+}
+
+.contact-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact-wrap p {
+    font-size: 1.33rem;
+    margin-bottom: 2px;
+}
+
+.contact-wrap {
+    margin: 10px 0;
+}
+
+.contact-wrap a {
+    font-weight: 700;
+    font-size: 1.33rem;
+    color: #000;
+    text-decoration: underline;
+}
+
+.privacy-wrap {
+    margin-bottom: 30px;
+}
+
+.privacy-wrap p,
+.privacy-wrap ul li {
+    font-size: 1.33rem;
+    margin-bottom: 5px;
+}
+
+.privacy-wrap ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+/* contact us page css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer css start */
+.site-footer {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.footer-logo img {
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+
+.social-links ul li a {
+    font-size: 1.66rem;
+    height: 50px;
+    width: 50px;
+    background-color: #024db6;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid;
+    transition: all 0.3s linear;
+}
+
+.social-links ul li a:hover {
+    background-color: #ff7000;
+}
+
+.social-links ul {
+    display: flex;
+    align-items: center;
+}
+
+.social-links ul li {
+    padding-inline-end: 20px;
+}
+
+.footer-heading h3 {
+    font-size: 2.33rem;
+    margin-bottom: 15px;
+    color: #024db6;
+}
+
+.footer-links ul li a {
+    font-size: 1.33rem;
+    color: #000;
+    transition: all 0.3s linear;
+}
+
+.footer-links ul li a:hover {
+    color: #ff7000;
+}
+
+.footer-links ul li {
+    padding-bottom: 5px;
+
+}
+
+.copy-right p {
+    font-size: 1.66rem;
+}
+
+.copy-right p {
+    font-size: 1.33rem;
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+.copy-right {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+.main-widget {
+    background: #024db6;
+    padding: 50px 0;
+}
+
+div#cookies-popup {
+    background: whitesmoke;
+    padding: 40px;
+    position: fixed;
+    bottom: 0;
+}
+div#cookies-popup p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+div#cookies-popup button#accept-cookies {
+    background: #024db6;
+    color: #fff;
+    padding: 10px 20px;
+    outline: unset;
+    border: unset;
+    border-radius: 20px;
+    font-size: 16px;
+}
+/* footer css end */
